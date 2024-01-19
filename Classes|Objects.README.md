@@ -2,7 +2,7 @@
 ```
 Example 1:
 
-python
+
 
 class Dog:
     def __init__(self, name, age):
@@ -14,7 +14,7 @@ print(dog1.name, dog1.age)
 ```
 Example 2:
 ```
-python
+
 
 class Circle:
     def __init__(self, radius):
@@ -28,7 +28,7 @@ print("Area of Circle:", circle1.area())
 ```
 Example 3:
 ```
-python
+
 
 class Student:
     def __init__(self, name, grade):
@@ -40,19 +40,19 @@ print(f"{student1.name} scored {student1.grade} grade.")
 ```
 Example 4:
 ```
-python
+
 
 class Book:
     def __init__(self, title, author):
         self.title = title
         self.author = author
 
-book1 = Book("Python Crash Course", "Eric Matthes")
+book1 = Book(" Crash Course", "Eric Matthes")
 print(f"{book1.title} by {book1.author}")
 ```
 Example 5:
 ```
-python
+
 
 class Car:
     def __init__(self, brand, model):
@@ -64,7 +64,7 @@ print(f"Car: {car1.brand} {car1.model}")
 ```
 #### Advanced Application:
 Creating a Simulation of a Car Rental System:
-```python
+```
 
 class Car:
     def __init__(self, brand, model):
