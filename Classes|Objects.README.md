@@ -96,4 +96,4 @@ Result:
 Renting Toyota Camry
 Renting Honda Accord
 Returning Toyota Camry
-```python
+```
