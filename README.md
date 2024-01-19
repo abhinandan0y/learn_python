@@ -5,7 +5,7 @@
 Example:
 
 python
-Copy code
+
 class Car:
     def __init__(self, brand, model):
         self.brand = brand
@@ -22,7 +22,7 @@ Creating a simulation of a car rental system where each car is an object with pr
 Example:
 
 python
-Copy code
+
 student = {"name": "John", "age": 20, "grade": "A"}
 print(student["name"], student["age"])
 Advanced Application:
@@ -34,7 +34,7 @@ Implementing a word frequency counter using a dictionary to analyze text data.
 Example:
 
 python
-Copy code
+
 try:
     result = 10 / 0
 except ZeroDivisionError as e:
@@ -48,7 +48,7 @@ Building a robust web scraper with error handling to handle various types of net
 Example:
 
 python
-Copy code
+
 def greet(name):
     return f"Hello, {name}!"
 
@@ -62,7 +62,7 @@ Creating a function to process and analyze large datasets efficiently.
 Example:
 
 python
-Copy code
+
 for i in range(5):
     print(i)
 Advanced Application:
@@ -74,7 +74,7 @@ Implementing a web crawler to extract information from multiple pages on a websi
 Example:
 
 python
-Copy code
+
 import threading
 
 def print_numbers():
@@ -92,7 +92,7 @@ Developing a parallel processing system for handling large-scale data analysis t
 Example:
 
 python
-Copy code
+
 import numpy as np
 
 array = np.array([1, 2, 3, 4])
@@ -106,7 +106,7 @@ Using NumPy for numerical operations in machine learning algorithms, such as mat
 Example:
 
 python
-Copy code
+
 import pandas as pd
 
 data = {'Name': ['John', 'Alice', 'Bob'], 'Age': [25, 30, 22]}
@@ -121,7 +121,7 @@ Analyzing and visualizing large datasets from a CSV file using Pandas.
 Example:
 
 python
-Copy code
+
 message = "Hello, World!"
 print(message.split(","))
 Advanced Application:
@@ -133,7 +133,7 @@ Developing a text-based natural language processing application.
 Example:
 
 python
-Copy code
+
 coordinates = (3, 4)
 print(coordinates[0], coordinates[1])
 Advanced Application:
@@ -145,7 +145,7 @@ Representing and manipulating coordinates in a geographical information system (
 Example:
 
 python
-Copy code
+
 x = 10
 if x > 5:
     print("Greater than 5")
@@ -161,7 +161,7 @@ Example:
 
 Setting up a virtual environment using venv:
 bash
-Copy code
+
 python -m venv myenv
 source myenv/bin/activate  # On Linux/Mac
 Advanced Application:
@@ -174,7 +174,7 @@ Automating environment setup using tools like Docker for deploying applications.
 Example:
 
 python
-Copy code
+
 with open("example.txt", "w") as file:
     file.write("Hello, File I/O!")
 Advanced Application:
@@ -186,7 +186,7 @@ Creating a program to read and process data from a variety of file formats.
 Example:
 
 python
-Copy code
+
 fruits = ["apple", "banana", "orange"]
 print(fruits[1])
 Advanced Application:
@@ -199,7 +199,7 @@ Example:
 
 Creating a custom module named my_module.py with a function add_numbers:
 python
-Copy code
+
 # my_module.py
 def add_numbers(a, b):
     return a + b
@@ -212,7 +212,7 @@ Developing a modular architecture for a complex software system.
 Example:
 
 python
-Copy code
+
 x = 5
 y = 2.5
 print(x + y)
@@ -225,7 +225,7 @@ Implementing numerical simulations or scientific computing using advanced mathem
 Example:
 
 python
-Copy code
+
 x = 10
 y = 3
 print(x // y)  # Integer division
@@ -238,7 +238,7 @@ Overloading operators for custom classes to define specific behavior.
 Example:
 
 python
-Copy code
+
 print("Hello, World!")
 Advanced Application:
 
@@ -250,7 +250,7 @@ Building a code formatter or linter to enforce coding standards.
 Example:
 
 python
-Copy code
+
 name = "John"
 age = 25
 is_student = True
