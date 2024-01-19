@@ -2,8 +2,7 @@
 ```python
 Example 1:
 
-python
-Copy code
+
 class Dog:
     def __init__(self, name, age):
         self.name = name
@@ -14,8 +13,7 @@ print(dog1.name, dog1.age)
 ```
 Example 2:
 ```python
-python
-Copy code
+
 class Circle:
     def __init__(self, radius):
         self.radius = radius
@@ -28,8 +26,7 @@ print("Area of Circle:", circle1.area())
 ```
 Example 3:
 ```python
-python
-Copy code
+
 class Student:
     def __init__(self, name, grade):
         self.name = name
@@ -40,8 +37,7 @@ print(f"{student1.name} scored {student1.grade} grade.")
 ```
 Example 4:
 ```python
-python
-Copy code
+
 class Book:
     def __init__(self, title, author):
         self.title = title
@@ -52,8 +48,7 @@ print(f"{book1.title} by {book1.author}")
 ```
 Example 5:
 ```python
-python
-Copy code
+
 class Car:
     def __init__(self, brand, model):
         self.brand = brand
