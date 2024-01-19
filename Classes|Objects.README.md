@@ -40,7 +40,8 @@ print(f"Car: {car1.brand} {car1.model}")
 ```
 #### Advanced Application:
 Creating a Simulation of a Car Rental System:
-```class Car:
+```
+class Car:
     def __init__(self, brand, model):
         self.brand = brand
         self.model = model
