@@ -244,18 +244,7 @@ Advanced Application:
 
 Building a code formatter or linter to enforce coding standards.
 ```
-19. Temp Variable:
-```
-Example:
 
-python
-Copy code
-temperature = 25
-print(f"The current temperature is {temperature} degrees Celsius.")
-Advanced Application:
-
-Using temporary variables in algorithm optimization to store intermediate results.
-```
 20. Variable Types:
 ```
 Example:
