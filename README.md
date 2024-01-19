@@ -13,6 +13,7 @@ class Car:
 
 my_car = Car(brand="Toyota", model="Camry")
 print(my_car.brand, my_car.model)
+
 Advanced Application:
 
 Creating a simulation of a car rental system where each car is an object with properties and methods.
@@ -25,6 +26,7 @@ python
 
 student = {"name": "John", "age": 20, "grade": "A"}
 print(student["name"], student["age"])
+
 Advanced Application:
 
 Implementing a word frequency counter using a dictionary to analyze text data.
@@ -39,6 +41,7 @@ try:
     result = 10 / 0
 except ZeroDivisionError as e:
     print(f"Error: {e}")
+
 Advanced Application:
 
 Building a robust web scraper with error handling to handle various types of network and parsing errors.
@@ -53,6 +56,7 @@ def greet(name):
     return f"Hello, {name}!"
 
 print(greet("Alice"))
+
 Advanced Application:
 
 Creating a function to process and analyze large datasets efficiently.
@@ -65,6 +69,7 @@ python
 
 for i in range(5):
     print(i)
+
 Advanced Application:
 
 Implementing a web crawler to extract information from multiple pages on a website using loops.
@@ -83,6 +88,7 @@ def print_numbers():
 
 thread = threading.Thread(target=print_numbers)
 thread.start()
+
 Advanced Application:
 
 Developing a parallel processing system for handling large-scale data analysis tasks.
@@ -97,6 +103,7 @@ import numpy as np
 
 array = np.array([1, 2, 3, 4])
 print(array)
+
 Advanced Application:
 
 Using NumPy for numerical operations in machine learning algorithms, such as matrix multiplication.
@@ -112,6 +119,7 @@ import pandas as pd
 data = {'Name': ['John', 'Alice', 'Bob'], 'Age': [25, 30, 22]}
 df = pd.DataFrame(data)
 print(df)
+
 Advanced Application:
 
 Analyzing and visualizing large datasets from a CSV file using Pandas.
@@ -124,6 +132,7 @@ python
 
 message = "Hello, World!"
 print(message.split(","))
+
 Advanced Application:
 
 Developing a text-based natural language processing application.
@@ -136,6 +145,7 @@ python
 
 coordinates = (3, 4)
 print(coordinates[0], coordinates[1])
+
 Advanced Application:
 
 Representing and manipulating coordinates in a geographical information system (GIS).
@@ -151,6 +161,7 @@ if x > 5:
     print("Greater than 5")
 else:
     print("Less than or equal to 5")
+
 Advanced Application:
 
 Implementing a decision-making algorithm in a recommendation system.
@@ -164,6 +175,7 @@ bash
 
 python -m venv myenv
 source myenv/bin/activate  # On Linux/Mac
+
 Advanced Application:
 
 Automating environment setup using tools like Docker for deploying applications.
@@ -177,6 +189,7 @@ python
 
 with open("example.txt", "w") as file:
     file.write("Hello, File I/O!")
+
 Advanced Application:
 
 Creating a program to read and process data from a variety of file formats.
@@ -189,6 +202,7 @@ python
 
 fruits = ["apple", "banana", "orange"]
 print(fruits[1])
+
 Advanced Application:
 
 Implementing a queue data structure using a list for efficient data processing.
@@ -203,6 +217,7 @@ python
 # my_module.py
 def add_numbers(a, b):
     return a + b
+
 Advanced Application:
 
 Developing a modular architecture for a complex software system.
@@ -216,6 +231,7 @@ python
 x = 5
 y = 2.5
 print(x + y)
+
 Advanced Application:
 
 Implementing numerical simulations or scientific computing using advanced mathematical operations.
@@ -229,6 +245,7 @@ python
 x = 10
 y = 3
 print(x // y)  # Integer division
+
 Advanced Application:
 
 Overloading operators for custom classes to define specific behavior.
@@ -240,6 +257,7 @@ Example:
 python
 
 print("Hello, World!")
+
 Advanced Application:
 
 Building a code formatter or linter to enforce coding standards.
@@ -254,6 +272,7 @@ python
 name = "John"
 age = 25
 is_student = True
+
 Advanced Application:
 
 Implementing dynamic typing in a scripting language interpreter or developing a type-checking tool.
