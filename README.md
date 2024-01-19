@@ -1,7 +1,5 @@
 # learn_python
 
-Certainly! Below are examples and an advanced application for each of the mentioned topics in Python:
-
 1. Classes | Objects:
 ```
 Example:
