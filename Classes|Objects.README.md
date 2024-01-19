@@ -58,9 +58,9 @@ car1 = Car("Toyota", "Camry")
 print(f"Car: {car1.brand} {car1.model}")
 ```
 #### Advanced Application:
-Creating a Simulation of a Car Rental System:
-```python
 
+```python
+Creating a Simulation of a Car Rental System:
 class Car:
     def __init__(self, brand, model):
         self.brand = brand
