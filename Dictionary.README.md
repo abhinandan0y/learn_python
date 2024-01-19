@@ -1,4 +1,4 @@
-#Dictionary::<br /> 
+#Dictionary:<br /> 
 
 Example 1:
 
