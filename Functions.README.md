@@ -46,7 +46,6 @@ Advanced Application:
 ```python
 #Creating a machine learning model evaluation function that takes predicted and actual values to calculate performance metrics.
 Creating a Function for Large Dataset Analysis:
-```python
 
 def process_large_dataset(data):
     # Perform complex analysis on the dataset
@@ -62,6 +61,4 @@ Result:
 makefile
 Copy code
 Result: 500000500000
-```
-
 ```
