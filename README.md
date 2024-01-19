@@ -245,7 +245,7 @@ Advanced Application:
 Building a code formatter or linter to enforce coding standards.
 ```
 
-20. Variable Types:
+19. Variable Types:
 ```
 Example:
 
