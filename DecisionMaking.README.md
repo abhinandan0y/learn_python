@@ -1,58 +1,83 @@
-#Dictionary::<br /> 
+#Decision Making:<br />
 
-Example 1:
-
-```python
-student = {"name": "John", "age": 20, "grade": "A"}
-print(student["name"], student["age"])
-```
-Example 2:
+Example 1: If Statement
 
 ```python
-employee = {"id": 101, "name": "Alice", "position": "Software Engineer"}
-print(f"{employee['name']} ({employee['position']}) - Employee ID: {employee['id']}")
+x = 10
+
+if x > 5:
+    print("x is greater than 5")
+else:
+    print("x is not greater than 5")
+    
+    
 ```
-Example 3:
+Example 2: Elif Statement
 
 ```python
-country_capitals = {"USA": "Washington D.C.", "France": "Paris", "India": "New Delhi"}
-print(country_capitals["France"])
+score = 75
+
+if score >= 90:
+    grade = 'A'
+elif score >= 80:
+    grade = 'B'
+else:
+    grade = 'C'
+
+print("Grade:", grade)
 ```
-Example 4:
+Example 3: Ternary Operator
 
 ```python
-fruit_prices = {"apple": 1.00, "banana": 0.75, "orange": 1.20}
-fruit_prices["grape"] = 2.50  # Adding a new entry
-print(fruit_prices)
+age = 21
+
+result = "Can vote" if age >= 18 else "Cannot vote"
+print(result)
 ```
-Example 5:
+Example 4: Nested Decision Making
 
 ```python
-car_info = dict(make="Toyota", model="Camry", year=2022)
-print(car_info)
-```
+x = 5
+y = 10
 
+if x > 0:
+    if y > 0:
+        print("Both x and y are positive")
+    else:
+        print("Only x is positive")
+else:
+    print("x is not positive")
+```
+Example 5: Using Logical Operators
+
+```python
+temperature = 25
+humidity = 70
+
+if temperature > 30 and humidity > 60:
+    print("Too hot and humid.")
+elif temperature > 30 or humidity > 60:
+    print("Either too hot or too humid.")
+else:
+    print("Weather is comfortable.")
+```
 Advanced Application:
 ```python
-# Implementing a Word Frequency Counter:
+#Implementing a Decision-Making Algorithm:
 
-text = "This is a sample text. ```python is powerful. ```python is versatile."
+def make_recommendation(user_data):
+    # Implement decision-making logic based on user data
+    if user_data['preferences']['genre'] == 'Action':
+        recommendation = 'Terminator 2'
+    else:
+        recommendation = 'The Shawshank Redemption'
+    return recommendation
 
-word_frequency = {}
-words = text.split()
-
-for word in words:
-    word = word.lower()
-    if word.isalpha():
-        if word in word_frequency:
-            word_frequency[word] += 1
-        else:
-            word_frequency[word] = 1
-
-print("Word Frequency:", word_frequency)
+# Usage
+user_data = {'preferences': {'genre': 'Action'}}
+recommendation = make_recommendation(user_data)
+print("Recommended Movie:", recommendation)
 Result:
 
-css
-Copy code
-Word Frequency: {'this': 1, 'is': 2, 'a': 1, 'sample': 1, 'text': 1, '```python': 2, 'powerful': 1, 'versatile': 1}
+Recommended Movie: Terminator 2
 ```
