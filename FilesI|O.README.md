@@ -3,8 +3,7 @@
 Example 1: Reading from a Text File
 
 ```python
-with open('```
-Example.txt', 'r') as file:
+with open('Example.txt', 'r') as file:
     content = file.read()
     print("File Content:", content)
 ```
