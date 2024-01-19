@@ -1,5 +1,5 @@
 #Classes | Objects:
-```
+```python
 Example 1:
 
 python
@@ -11,9 +11,9 @@ class Dog:
 
 dog1 = Dog("Buddy", 3)
 print(dog1.name, dog1.age)
-```
+```python
 Example 2:
-```
+```python
 python
 Copy code
 class Circle:
@@ -25,9 +25,9 @@ class Circle:
 
 circle1 = Circle(5)
 print("Area of Circle:", circle1.area())
-```
+```python
 Example 3:
-```
+```python
 python
 Copy code
 class Student:
@@ -37,9 +37,9 @@ class Student:
 
 student1 = Student("Alice", "A")
 print(f"{student1.name} scored {student1.grade} grade.")
-```
+```python
 Example 4:
-```
+```python
 python
 Copy code
 class Book:
@@ -49,9 +49,9 @@ class Book:
 
 book1 = Book("Python Crash Course", "Eric Matthes")
 print(f"{book1.title} by {book1.author}")
-```
+```python
 Example 5:
-```
+```python
 python
 Copy code
 class Car:
@@ -61,7 +61,7 @@ class Car:
 
 car1 = Car("Toyota", "Camry")
 print(f"Car: {car1.brand} {car1.model}")
-```
+```python
 #### Advanced Application:
 Creating a Simulation of a Car Rental System:
 ```python
@@ -96,4 +96,4 @@ Result:
 Renting Toyota Camry
 Renting Honda Accord
 Returning Toyota Camry
-```
+```python
