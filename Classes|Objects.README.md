@@ -1,5 +1,5 @@
 #Classes | Objects:
-``` ```
+\n
 Example 1:
 ```
 class Dog:
