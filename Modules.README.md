@@ -4,7 +4,7 @@
 Example:
 
 ```python
-Copy code
+
 # Example module: mymodule.py
 
 def greet(name):
