@@ -33,8 +33,9 @@ print(car_info)
 ```
 
 Advanced Application:
- Implementing a Word Frequency Counter:
-``````python
+```python
+# Implementing a Word Frequency Counter:
+
 text = "This is a sample text. ```python is powerful. ```python is versatile."
 
 word_frequency = {}
