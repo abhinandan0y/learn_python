@@ -47,18 +47,31 @@ class Car:
     def __init__(self, brand, model):
         self.brand = brand
         self.model = model
-        self.available = True    def rent(self):
+        self.available = True
+
+    def rent(self):
         if self.available:
             print(f"Renting {self.brand} {self.model}")
             self.available = False
         else:
-            print("Car not available for rent")    def return_car(self):
+            print("Car not available for rent")
+
+    def return_car(self):
         print(f"Returning {self.brand} {self.model}")
-        self.available = True# Usage
+        self.available = True
+
+# Usage
 car1 = Car("Toyota", "Camry")
-car2 = Car("Honda", "Accord")car1.rent()
-car2.rent()car1.return_car()
-Result:Renting Toyota Camry
+car2 = Car("Honda", "Accord")
+
+car1.rent()
+car2.rent()
+
+car1.return_car()
+Result:
+
+Copy code
+Renting Toyota Camry
 Renting Honda Accord
 Returning Toyota Camry
 ```
