@@ -1,6 +1,6 @@
 #List of Q A for practice with examples
 
-What is a better way for a python for loop?<br>
+What is a better way for a python for loop ?<br>
 How to access uri parameters via webapp2?<br>
 How to add a user to a group in django?<br>
 How to add days to a date in python?<br>
