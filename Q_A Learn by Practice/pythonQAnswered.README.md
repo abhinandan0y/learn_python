@@ -1,13 +1,13 @@
 #List of Q A for practice with examples
 
-What is a better way for a python for loop<br>
-How to access uri parameters via webapp2<br>
-How to add a user to a group in django<br>
-How to add days to a date in python<br>
-How to add directory to sys path pythonpath<br>
-How to add spaces to items in list python<br>
-How to add params to given url in python<br>
-How to add x and y labels to a pandas plot<br>
+What is a better way for a python for loop?<br>
+How to access uri parameters via webapp2?<br>
+How to add a user to a group in django?<br>
+How to add days to a date in python?<br>
+How to add directory to sys path pythonpath?<br>
+How to add spaces to items in list python?<br>
+How to add params to given url in python?<br>
+How to add x and y labels to a pandas plot?<br>
 agent based simulation performance issue python vs netlogo repast<br>
 api key and django rest framework auth token<br>
 Why application is not picking up css file flask python<br>
