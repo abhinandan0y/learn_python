@@ -8,8 +8,7 @@
 </div>
 
 
-<div>
-    <pre><code class="language-python">
+<div><pre><code class="language-python">
 <p>Find the group using Group model with the name of the group, then add the user to the user_set</p>
 
 <pre><code>from django.contrib.auth.models import Group
