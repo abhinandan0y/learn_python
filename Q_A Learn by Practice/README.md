@@ -12,3 +12,9 @@ my_group.user_set.add(your_user)
     </div>
 
 ```
+<div>
+    ```python
+    def hello_world():
+        print("Hello, world!")
+    ```
+</div>
