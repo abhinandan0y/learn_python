@@ -50,14 +50,7 @@ my_group = Group.objects.get(name='my_group_name')
 my_group.user_set.add(your_user)
 </code>
 
-adding-a-user-to-a-group-in-django.txt
-    
-<p>Find the group using Group model with the name of the group, then add the user to the user_set</p>
 
-<code class="language-python">from django.contrib.auth.models import Group
-my_group = Group.objects.get(name='my_group_name') 
-my_group.user_set.add(your_user)
-</code>
 adding-days-to-a-date-in-python.txt
     
 <p>The previous answers are correct but it's generally a better practice to do:</p>
