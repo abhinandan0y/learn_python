@@ -49,3 +49,25 @@ adding-a-user-to-a-group-in-django.txt
 my_group = Group.objects.get(name='my_group_name') 
 my_group.user_set.add(your_user)
 </code>
+
+adding-a-user-to-a-group-in-django.txt
+    
+<p>Find the group using Group model with the name of the group, then add the user to the user_set</p>
+
+<code class="language-python">from django.contrib.auth.models import Group
+my_group = Group.objects.get(name='my_group_name') 
+my_group.user_set.add(your_user)
+</code>
+adding-days-to-a-date-in-python.txt
+    
+<p>The previous answers are correct but it's generally a better practice to do:</p>
+
+<code class="language-python">import datetime
+</code>
+
+<p>Then you'll have, using <a href="https://docs.python.org/2/library/datetime.html#datetime.timedelta" rel="noreferrer"><code class="language-python">datetime.timedelta</code></a>:</p>
+
+<code class="language-python">date_1 = datetime.datetime.strptime(start_date, "%m/%d/%y")
+
+end_date = date_1 + datetime.timedelta(days=10)
+</code>
