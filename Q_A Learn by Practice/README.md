@@ -22,16 +22,3 @@ repeat(None, 9223372036854775807)
 
 <p>Which is plenty big for my loops ;-)</p>
 
-adding-days-to-a-date-in-python.txt
-    
-<p>The previous answers are correct but it's generally a better practice to do:</p>
-
-<code class="language-python">import datetime
-</code>
-
-<p>Then you'll have, using <a href="https://docs.python.org/2/library/datetime.html#datetime.timedelta" rel="noreferrer"><code class="language-python">datetime.timedelta</code></a>:</p>
-
-<code class="language-python">date_1 = datetime.datetime.strptime(start_date, "%m/%d/%y")
-
-end_date = date_1 + datetime.timedelta(days=10)
-</code>
