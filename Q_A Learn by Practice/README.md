@@ -18,3 +18,10 @@ my_group.user_set.add(your_user)
         print("Hello, world!")
     ```
 </div>
+
+<div>
+    <pre><code class="language-python">
+    def hello_world():
+        print("Hello, world!")
+    </code></pre>
+</div>
