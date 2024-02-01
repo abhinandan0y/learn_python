@@ -1,6 +1,4 @@
 # test  
-<code class="language-python">    def hello_world():
-        print("Hello, world!")
 <p>Find the group using Group model with the name of the group, then add the user to the user_set</p>
 
 <code class="language-python">  
