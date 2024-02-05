@@ -182,7 +182,7 @@ Advanced Application:
 Implementing a queue data structure using a list for efficient data processing.
 ```
 15. Modules:
-```
+```python
 Example:
 
 Creating a custom module named my_module.py with a function add_numbers:
