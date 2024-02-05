@@ -1,10 +1,8 @@
 # learn_python
 
 1. Classes | Objects:
-```
+```python
 Example:
-
-python
 
 class Car:
     def __init__(self, brand, model):
@@ -19,10 +17,8 @@ Advanced Application:
 Creating a simulation of a car rental system where each car is an object with properties and methods.
 ```
 2. Dictionary:
-```
+```python
 Example:
-
-python
 
 student = {"name": "John", "age": 20, "grade": "A"}
 print(student["name"], student["age"])
@@ -32,10 +28,8 @@ Advanced Application:
 Implementing a word frequency counter using a dictionary to analyze text data.
 ```
 3. Exceptions Handling:
-```
+```python
 Example:
-
-python
 
 try:
     result = 10 / 0
@@ -47,10 +41,8 @@ Advanced Application:
 Building a robust web scraper with error handling to handle various types of network and parsing errors.
 ```
 4. Functions:
-```
+```python
 Example:
-
-python
 
 def greet(name):
     return f"Hello, {name}!"
@@ -62,10 +54,8 @@ Advanced Application:
 Creating a function to process and analyze large datasets efficiently.
 ```
 5. Loops:
-```
+```python
 Example:
-
-python
 
 for i in range(5):
     print(i)
@@ -75,10 +65,8 @@ Advanced Application:
 Implementing a web crawler to extract information from multiple pages on a website using loops.
 ```
 6. Multithreaded Programming:
-```
+```python
 Example:
-
-python
 
 import threading
 
@@ -94,10 +82,8 @@ Advanced Application:
 Developing a parallel processing system for handling large-scale data analysis tasks.
 ```
 7. Numpy:
-```
+```python
 Example:
-
-python
 
 import numpy as np
 
@@ -109,10 +95,8 @@ Advanced Application:
 Using NumPy for numerical operations in machine learning algorithms, such as matrix multiplication.
 ```
 8. Pandas:
-```
+```python
 Example:
-
-python
 
 import pandas as pd
 
@@ -125,10 +109,8 @@ Advanced Application:
 Analyzing and visualizing large datasets from a CSV file using Pandas.
 ```
 9. Strings:
-```
+```python
 Example:
-
-python
 
 message = "Hello, World!"
 print(message.split(","))
@@ -138,10 +120,8 @@ Advanced Application:
 Developing a text-based natural language processing application.
 ```
 10. Tuples:
-```
+```python
 Example:
-
-python
 
 coordinates = (3, 4)
 print(coordinates[0], coordinates[1])
@@ -151,10 +131,8 @@ Advanced Application:
 Representing and manipulating coordinates in a geographical information system (GIS).
 ```
 11. Decision Making:
-```
+```python
 Example:
-
-python
 
 x = 10
 if x > 5:
@@ -182,10 +160,8 @@ Automating environment setup using tools like Docker for deploying applications.
 
 ```
 13. Files I/O:
-```
+```python
 Example:
-
-python
 
 with open("example.txt", "w") as file:
     file.write("Hello, File I/O!")
@@ -195,10 +171,8 @@ Advanced Application:
 Creating a program to read and process data from a variety of file formats.
 ```
 14. Lists:
-```
+```python
 Example:
-
-python
 
 fruits = ["apple", "banana", "orange"]
 print(fruits[1])
@@ -223,10 +197,8 @@ Advanced Application:
 Developing a modular architecture for a complex software system.
 ```
 16. Numbers:
-```
+```python
 Example:
-
-python
 
 x = 5
 y = 2.5
@@ -237,10 +209,8 @@ Advanced Application:
 Implementing numerical simulations or scientific computing using advanced mathematical operations.
 ```
 17. Operators:
-```
+```python
 Example:
-
-python
 
 x = 10
 y = 3
@@ -251,10 +221,8 @@ Advanced Application:
 Overloading operators for custom classes to define specific behavior.
 ```
 18. Python Basic Syntax:
-```
+```python
 Example:
-
-python
 
 print("Hello, World!")
 
@@ -264,10 +232,8 @@ Building a code formatter or linter to enforce coding standards.
 ```
 
 19. Variable Types:
-```
+```python
 Example:
-
-python
 
 name = "John"
 age = 25
