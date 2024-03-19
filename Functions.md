@@ -1,4 +1,4 @@
-# bioinformatics_functions:
+# functions:
 
 ```Example 1:```
 ```python
