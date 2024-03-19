@@ -1,58 +1,45 @@
-#Dictionary:<br /> 
+# bioinformatics_dictionary:
 
-Example 1:
-
+```Example 1:```
 ```python
-student = {"name": "John", "age": 20, "grade": "A"}
-print(student["name"], student["age"])
+sequence_info = {"gene_name": "TP53", "length": 1000, "type": "coding"}
+print(sequence_info["gene_name"], sequence_info["length"])
 ```
-Example 2:
-
+```Example 2:```
 ```python
-employee = {"id": 101, "name": "Alice", "position": "Software Engineer"}
-print(f"{employee['name']} ({employee['position']}) - Employee ID: {employee['id']}")
+sequence_properties = {"id": "SEQ001", "sequence": "ATCGATCG", "source": "GenBank"}
+print(f"Sequence ID: {sequence_properties['id']}, Source: {sequence_properties['source']}")
 ```
-Example 3:
-
+```Example 3:```
 ```python
-country_capitals = {"USA": "Washington D.C.", "France": "Paris", "India": "New Delhi"}
-print(country_capitals["France"])
+genome_assemblies = {"GRCh38": "Human", "GRCm39": "Mouse", "CanFam4": "Dog"}
+print(genome_assemblies["GRCh38"])
 ```
-Example 4:
-
+```Example 4:```
 ```python
-fruit_prices = {"apple": 1.00, "banana": 0.75, "orange": 1.20}
-fruit_prices["grape"] = 2.50  # Adding a new entry
-print(fruit_prices)
+sequence_counts = {"A": 25, "T": 30, "C": 20, "G": 25}
+sequence_counts["N"] = 10  # Adding a new entry
+print(sequence_counts)
 ```
-Example 5:
-
+```Example 5:```
 ```python
-car_info = dict(make="Toyota", model="Camry", year=2022)
-print(car_info)
+bioinformatics_tools = dict(aligner="BLAST", simulator="SimSeq", assembler="SPAdes")
+print(bioinformatics_tools)
 ```
-
 Advanced Application:
+
+```Implementing a k-mer frequency counter:```
 ```python
-#Implementing a Word Frequency Counter:
+dna_sequence = "ATCGATCGATCG"
+kmer_length = 3
 
-text = "This is a sample text. ```python is powerful. ```python is versatile."
+kmer_frequency = {}
+for i in range(len(dna_sequence) - kmer_length + 1):
+    kmer = dna_sequence[i:i + kmer_length]
+    if kmer in kmer_frequency:
+        kmer_frequency[kmer] += 1
+    else:
+        kmer_frequency[kmer] = 1
 
-word_frequency = {}
-words = text.split()
-
-for word in words:
-    word = word.lower()
-    if word.isalpha():
-        if word in word_frequency:
-            word_frequency[word] += 1
-        else:
-            word_frequency[word] = 1
-
-print("Word Frequency:", word_frequency)
-Result:
-
-css
-Copy code
-Word Frequency: {'this': 1, 'is': 2, 'a': 1, 'sample': 1, 'text': 1, '```python': 2, 'powerful': 1, 'versatile': 1}
+print("K-mer Frequency:", kmer_frequency)
 ```
