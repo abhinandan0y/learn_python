@@ -49,58 +49,79 @@ with open('data.pkl', 'rb') as file:
 Advanced Application:
 ```python
 #Developing a data pipeline that reads streaming data from sensors, processes it, and stores it in a distributed file system for further analysis.
-#Advanced Application: Data Processing Program
+# Advanced Application: Bioinformatics Data Processing Program
 
-# FileProcessor.py
+# BioinformaticsFileProcessor.py
 
 import csv
 import json
 import xml.etree.ElementTree as ET
 
-class FileProcessor:
+class BioinformaticsFileProcessor:
     def __init__(self, file_path):
         self.file_path = file_path
 
-    def read_csv(self):
+    def read_fasta(self):
+        sequences = {}
         with open(self.file_path, 'r') as file:
-            reader = csv.reader(file)
-            data = [row for row in reader]
-        return data
+            current_sequence_id = ''
+            current_sequence = ''
+            for line in file:
+                if line.startswith('>'):
+                    if current_sequence:
+                        sequences[current_sequence_id] = current_sequence
+                        current_sequence = ''
+                    current_sequence_id = line.strip()[1:]
+                else:
+                    current_sequence += line.strip()
+            if current_sequence:
+                sequences[current_sequence_id] = current_sequence
+        return sequences
 
-    def read_json(self):
+    def read_genbank(self):
+        sequences = {}
         with open(self.file_path, 'r') as file:
-            data = json.load(file)
-        return data
+            for line in file:
+                if line.startswith('LOCUS'):
+                    current_sequence_id = line.split()[1]
+                    current_sequence = ''
+                elif line.startswith('ORIGIN'):
+                    current_sequence = ''
+                elif line.startswith('//'):
+                    sequences[current_sequence_id] = current_sequence
+                else:
+                    current_sequence += line.strip().upper().replace(' ', '')
+        return sequences
 
-    def read_xml(self):
-        tree = ET.parse(self.file_path)
-        root = tree.getroot()
-        data = []
-
-        for element in root:
-            record = {}
-            for child in element:
-                record[child.tag] = child.text
-            data.append(record)
-
-        return data
+    def read_phylip(self):
+        sequences = {}
+        with open(self.file_path, 'r') as file:
+            lines = file.readlines()
+            num_sequences = int(lines[0].strip().split()[0])
+            for i in range(1, len(lines)):
+                current_line = lines[i].strip().split()
+                sequences[current_line[0]] = current_line[1]
+        return sequences
 
 # Main script
-file_path_csv = 'data.csv'
-file_path_json = 'data.json'
-file_path_xml = 'data.xml'
+file_path_fasta = 'sequences.fasta'
+file_path_genbank = 'sequences.gb'
+file_path_phylip = 'sequences.phy'
 
-csv_data = FileProcessor(file_path_csv).read_csv()
-json_data = FileProcessor(file_path_json).read_json()
-xml_data = FileProcessor(file_path_xml).read_xml()
+fasta_sequences = BioinformaticsFileProcessor(file_path_fasta).read_fasta()
+genbank_sequences = BioinformaticsFileProcessor(file_path_genbank).read_genbank()
+phylip_sequences = BioinformaticsFileProcessor(file_path_phylip).read_phylip()
 
 # Example usage of processed data
-print("CSV Data:")
-print(csv_data)
+print("FASTA Sequences:")
+print(fasta_sequences)
 
-print("\nJSON Data:")
-print(json_data)
+print("\nGenBank Sequences:")
+print(genbank_sequences)
 
-print("\nXML Data:")
-print(xml_data)
+print("\nPhylip Sequences:")
+print(phylip_sequences)
 ```
+
+
+
