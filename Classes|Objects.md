@@ -1,5 +1,5 @@
 # bioinformatics_classes_objects:
-
+```python
 class DNASequence:
     def __init__(self, sequence_id, sequence):
         self.sequence_id = sequence_id
@@ -23,13 +23,13 @@ class Gene:
 
 gene1 = Gene("BRCA1", "ATCGTATG")
 print(gene1.symbol, gene1.sequence)
-
+```
 # Advanced Application:
 
 # Creating a simulation of a genetic engineering lab where each DNA sequence, protein, or gene is represented as an object with properties and methods.
 
 # bioinformatics_advanced_application:
-
+```python
 class SequenceAnalysis:
     def __init__(self, sequence):
         self.sequence = sequence
@@ -42,7 +42,7 @@ class SequenceAnalysis:
 
 dna_sequence = SequenceAnalysis("ATCGATCGATCG")
 print("GC Content:", dna_sequence.calculate_gc_content())
-
+```
 # Advanced Application:
 
 # Developing a bioinformatics toolkit for sequence analysis with methods to calculate GC content, perform sequence alignment, and predict protein structure.
