@@ -1,83 +1,73 @@
-#Decision Making:<br />
+# decision_making:
 
-Example 1: If Statement
-
+```Example 1: If Statement```
 ```python
-x = 10
+mutation_count = 20
 
-if x > 5:
-    print("x is greater than 5")
+if mutation_count > 10:
+    print("High mutation count detected.")
 else:
-    print("x is not greater than 5")
-    
-    
+    print("Mutation count within normal range.")
 ```
-Example 2: Elif Statement
-
+```Example 2: Elif Statement```
 ```python
-score = 75
+gene_expression = 150
 
-if score >= 90:
-    grade = 'A'
-elif score >= 80:
-    grade = 'B'
+if gene_expression >= 200:
+    expression_level = 'High'
+elif gene_expression >= 100:
+    expression_level = 'Moderate'
 else:
-    grade = 'C'
+    expression_level = 'Low'
 
-print("Grade:", grade)
+print("Expression Level:", expression_level)
 ```
-Example 3: Ternary Operator
-
+```Example 3: Ternary Operator```
 ```python
-age = 21
+mutation_type = 'SNP'
 
-result = "Can vote" if age >= 18 else "Cannot vote"
-print(result)
+result = "High impact" if mutation_type == 'SNP' else "Low impact"
+print("Mutation Impact:", result)
 ```
-Example 4: Nested Decision Making
-
+```Example 4: Nested Decision Making```
 ```python
-x = 5
-y = 10
+dna_length = 500
+gc_content = 60
 
-if x > 0:
-    if y > 0:
-        print("Both x and y are positive")
+if dna_length > 100:
+    if gc_content > 50:
+        print("High GC content in long DNA sequence.")
     else:
-        print("Only x is positive")
+        print("Low GC content in long DNA sequence.")
 else:
-    print("x is not positive")
+    print("DNA sequence length not sufficient for analysis.")
 ```
-Example 5: Using Logical Operators
-
+```Example 5: Using Logical Operators```
 ```python
 temperature = 25
 humidity = 70
 
 if temperature > 30 and humidity > 60:
-    print("Too hot and humid.")
+    print("High temperature and humidity detected.")
 elif temperature > 30 or humidity > 60:
-    print("Either too hot or too humid.")
+    print("Either high temperature or humidity detected.")
 else:
-    print("Weather is comfortable.")
-```
+    print("Temperature and humidity within normal range.")
+
 Advanced Application:
+
+```Implementing a Decision-Making Algorithm:```
 ```python
-#Implementing a Decision-Making Algorithm:
-
-def make_recommendation(user_data):
-    # Implement decision-making logic based on user data
-    if user_data['preferences']['genre'] == 'Action':
-        recommendation = 'Terminator 2'
+def predict_variant_effect(variant_data):
+    # Implement decision-making logic based on variant data
+    if variant_data['impact'] == 'HIGH':
+        effect = 'Pathogenic'
     else:
-        recommendation = 'The Shawshank Redemption'
-    return recommendation
+        effect = 'Benign'
+    return effect
 
-# Usage
-user_data = {'preferences': {'genre': 'Action'}}
-recommendation = make_recommendation(user_data)
-print("Recommended Movie:", recommendation)
-Result:
-
-Recommended Movie: Terminator 2
+Usage
+variant_data = {'impact': 'HIGH'}
+effect_prediction = predict_variant_effect(variant_data)
+print("Predicted Variant Effect:", effect_prediction)
 ```
