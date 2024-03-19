@@ -1,21 +1,75 @@
 # learn_python
 
-1. Classes | Objects:
+1. Environment Setup:
+```
+Example:
+
+Setting up a virtual environment using venv:
+bash
+
+python -m venv myenv
+source myenv/bin/activate  # On Linux/Mac
+```
+2. Numbers:
 ```python
 Example:
 
-class DNASequence:
-    def __init__(self, sequence):
-        self.sequence = sequence
+x = 5
+y = 2.5
+print(x + y)
+```
+3. Operators:
+```python
+Example:
 
-my_sequence = DNASequence(sequence="ATCG")
-print(my_sequence.sequence)
+x = 10
+y = 3
+print(x // y)  # Integer division
+```
+4. Python Basic Syntax:
+```python
+Example:
+
+print("Hello, Bioinformatics World!")
+```
+
+5. Variable Types:
+```python
+Example:
+
+gene_name = "TP53"
+gene_length = 1000
+is_coding_gene = True
+```
+
+6. Strings:
+```python
+Example:
+
+message = "Hello, World!"
+print(message.split(","))
+
+sequence = "ATCGATCG"
+print(sequence.split("AT"))
 
 Advanced Application:
 
-# Creating a simulation of a gene expression system where each DNA sequence is an object with properties and methods.
+#Developing a program to predict RNA secondary structure from nucleotide sequence.
 ```
-2. Dictionary:
+7. Lists:
+```python
+Example:
+
+genes = ["TP53", "BRCA1", "EGFR"]
+print(genes[1])
+
+Advanced Application:
+
+#Implementing a queue data structure using a list for efficient data processing.
+# Implementing a stack data structure to process genomic data during sequence assembly.
+```
+
+8. Dictionary:
 ```python
 Example:
 
@@ -26,7 +80,21 @@ Advanced Application:
 
 # Implementing a k-mer frequency counter using a dictionary to analyze DNA sequences.
 ```
-3. Exceptions Handling:
+9. Tuples:
+```python
+Example:
+
+coordinates = (3, 4)
+print(coordinates[0], coordinates[1])
+
+coordinate = (3, 4)
+print(coordinate[0], coordinate[1])
+
+Advanced Application:
+
+# Representing and manipulating genomic coordinates in a genome annotation database.
+```
+10. Exceptions Handling:
 ```python
 Example:
 
@@ -39,7 +107,76 @@ except EntropyCalculationError as e:
 
 # Building a robust genome assembler with error handling to handle various types of sequencing and assembly errors.
 ```
-4. Functions:
+
+11. Numpy:
+```python
+Example:
+
+import numpy as np
+
+array = np.array([1, 2, 3, 4])
+print(array)
+
+import numpy as np
+
+sequence_array = np.array(["ATCG", "GCTA", "TTAG"])
+print(sequence_array)
+
+Advanced Application:
+
+
+# Using NumPy for genomic data analysis, such as SNP detection from sequencing data.
+```
+12. Pandas:
+```python
+Example:
+
+import pandas as pd
+
+data = {'Name': ['John', 'Alice', 'Bob'], 'Age': [25, 30, 22]}
+df = pd.DataFrame(data)
+print(df)
+
+import pandas as pd
+
+data = {'Gene': ['TP53', 'BRCA1', 'EGFR'], 'Expression': [10, 5, 8]}
+df = pd.DataFrame(data)
+print(df)
+Advanced Application:
+
+Analyzing and visualizing gene expression data from RNA-seq experiments using Pandas.
+```
+
+13. Decision Making:
+```python
+Example:
+
+x = 10
+if x > 5:
+    print("Greater than 5")
+else:
+    print("Less than or equal to 5")
+
+Advanced Application:
+
+# Implementing a decision-making algorithm in a variant calling pipeline.
+```
+
+14. Files I/O:
+```python
+Example:
+
+with open("example.txt", "w") as file:
+    file.write("Hello, File I/O!")
+
+with open("genomic_data.txt", "r") as file:
+    data = file.read()
+
+Advanced Application:
+
+Creating a program to read and process data from a variety of file formats.
+```
+15. Functions:
 ```python
 Example:
 
@@ -76,156 +213,7 @@ Advanced Application:
 
 # Creating a function to predict protein secondary structure from amino acid sequence.
 ```
-5. Loops:
-```python
-Example:
-
-for i in range(5):
-    print(i)
-
-Advanced Application:
-
-# Implementing a sequence alignment algorithm to compare DNA sequences using loops.
-```
-6. Multithreaded Programming:
-```python
-Example:
-
-import threading
-
-def print_numbers():
-    for i in range(5):
-        print(i)
-
-thread = threading.Thread(target=print_numbers)
-thread.start()
-
-Advanced Application:
-
-# Developing a parallel computing system for analyzing large-scale genomic datasets.
-```
-7. Numpy:
-```python
-Example:
-
-import numpy as np
-
-array = np.array([1, 2, 3, 4])
-print(array)
-
-import numpy as np
-
-sequence_array = np.array(["ATCG", "GCTA", "TTAG"])
-print(sequence_array)
-
-Advanced Application:
-
-
-# Using NumPy for genomic data analysis, such as SNP detection from sequencing data.
-```
-8. Pandas:
-```python
-Example:
-
-import pandas as pd
-
-data = {'Name': ['John', 'Alice', 'Bob'], 'Age': [25, 30, 22]}
-df = pd.DataFrame(data)
-print(df)
-
-import pandas as pd
-
-data = {'Gene': ['TP53', 'BRCA1', 'EGFR'], 'Expression': [10, 5, 8]}
-df = pd.DataFrame(data)
-print(df)
-Advanced Application:
-
-Analyzing and visualizing gene expression data from RNA-seq experiments using Pandas.
-```
-9. Strings:
-```python
-Example:
-
-message = "Hello, World!"
-print(message.split(","))
-
-sequence = "ATCGATCG"
-print(sequence.split("AT"))
-
-Advanced Application:
-
-#Developing a program to predict RNA secondary structure from nucleotide sequence.
-```
-10. Tuples:
-```python
-Example:
-
-coordinates = (3, 4)
-print(coordinates[0], coordinates[1])
-
-coordinate = (3, 4)
-print(coordinate[0], coordinate[1])
-
-Advanced Application:
-
-# Representing and manipulating genomic coordinates in a genome annotation database.
-```
-11. Decision Making:
-```python
-Example:
-
-x = 10
-if x > 5:
-    print("Greater than 5")
-else:
-    print("Less than or equal to 5")
-
-Advanced Application:
-
-# Implementing a decision-making algorithm in a variant calling pipeline.
-```
-12. Environment Setup:
-```
-Example:
-
-Setting up a virtual environment using venv:
-bash
-
-python -m venv myenv
-source myenv/bin/activate  # On Linux/Mac
-
-Advanced Application:
-
-#Automating environment setup using tools like Docker for deploying applications.
-# Automating environment setup using tools like ***Snakemake*** for reproducible bioinformatics pipelines.
-```
-13. Files I/O:
-```python
-Example:
-
-with open("example.txt", "w") as file:
-    file.write("Hello, File I/O!")
-
-with open("genomic_data.txt", "r") as file:
-    data = file.read()
-
-Advanced Application:
-
-Creating a program to read and process data from a variety of file formats.
-```
-14. Lists:
-```python
-Example:
-
-genes = ["TP53", "BRCA1", "EGFR"]
-print(genes[1])
-
-Advanced Application:
-
-#Implementing a queue data structure using a list for efficient data processing.
-# Implementing a stack data structure to process genomic data during sequence assembly.
-```
-15. Modules:
+16. Modules:
 ```python
 Example:
 
@@ -244,38 +232,50 @@ Advanced Application:
 
 # Developing a modular bioinformatics toolkit for various sequence analysis tasks.
 ```
-16. Numbers:
+17. Classes | Objects:
 ```python
 Example:
 
-x = 5
-y = 2.5
-print(x + y)
+class DNASequence:
+    def __init__(self, sequence):
+        self.sequence = sequence
+
+my_sequence = DNASequence(sequence="ATCG")
+print(my_sequence.sequence)
+
+Advanced Application:
+
+# Creating a simulation of a gene expression system where each DNA sequence is an object with properties and methods.
 ```
-17. Operators:
+
+18. Loops:
 ```python
 Example:
 
-x = 10
-y = 3
-print(x // y)  # Integer division
+for i in range(5):
+    print(i)
+
+Advanced Application:
+
+# Implementing a sequence alignment algorithm to compare DNA sequences using loops.
 ```
-18. Python Basic Syntax:
+19. Multithreaded Programming:
 ```python
 Example:
 
-print("Hello, Bioinformatics World!")
+import threading
+
+def print_numbers():
+    for i in range(5):
+        print(i)
+
+thread = threading.Thread(target=print_numbers)
+thread.start()
+
+Advanced Application:
+
+# Developing a parallel computing system for analyzing large-scale genomic datasets.
 ```
-
-19. Variable Types:
-```python
-Example:
-
-gene_name = "TP53"
-gene_length = 1000
-is_coding_gene = True
-```
-
 **#Knowlegde is FREE but Solution is Your's🤘🏻**
 
 **Keep on Learning and Executing...🏃🏻** contact@:bioinformaticsfuture@gmail.com
