@@ -1,4 +1,4 @@
-# bioinformatics_classes_objects:
+# classes_objects:
 ```python
 class DNASequence:
     def __init__(self, sequence_id, sequence):
@@ -24,9 +24,9 @@ class Gene:
 gene1 = Gene("BRCA1", "ATCGTATG")
 print(gene1.symbol, gene1.sequence)
 ```
-# Advanced Application:
+#### Advanced Application:
 
-# Creating a simulation of a genetic engineering lab where each DNA sequence, protein, or gene is represented as an object with properties and methods.
+Creating a simulation of a genetic engineering lab where each DNA sequence, protein, or gene is represented as an object with properties and methods.
 
 # bioinformatics_advanced_application:
 ```python
