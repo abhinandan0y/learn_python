@@ -13,32 +13,31 @@ print(my_sequence.sequence)
 
 Advanced Application:
 
-Creating a simulation of a car rental system where each car is an object with properties and methods.
+# Creating a simulation of a gene expression system where each DNA sequence is an object with properties and methods.
 ```
 2. Dictionary:
 ```python
 Example:
-
 
 sequence_info = {"gene_name": "TP53", "length": 1000, "type": "coding"}
 print(sequence_info["gene_name"], sequence_info["length"])
 
 Advanced Application:
 
-Implementing a word frequency counter using a dictionary to analyze text data.
+# Implementing a k-mer frequency counter using a dictionary to analyze DNA sequences.
 ```
 3. Exceptions Handling:
 ```python
 Example:
 
 try:
-    result = 10 / 0
-except ZeroDivisionError as e:
+    result = calculate_entropy()
+except EntropyCalculationError as e:
     print(f"Error: {e}")
 
-Advanced Application:
+# Advanced Application:
 
-Building a robust web scraper with error handling to handle various types of network and parsing errors.
+# Building a robust genome assembler with error handling to handle various types of sequencing and assembly errors.
 ```
 4. Functions:
 ```python
@@ -75,7 +74,7 @@ def translate_dna_sequence(dna_sequence):
 
 Advanced Application:
 
-Creating a function to process and analyze large datasets efficiently.
+# Creating a function to predict protein secondary structure from amino acid sequence.
 ```
 5. Loops:
 ```python
@@ -86,7 +85,7 @@ for i in range(5):
 
 Advanced Application:
 
-Implementing a web crawler to extract information from multiple pages on a website using loops.
+# Implementing a sequence alignment algorithm to compare DNA sequences using loops.
 ```
 6. Multithreaded Programming:
 ```python
@@ -103,7 +102,7 @@ thread.start()
 
 Advanced Application:
 
-Developing a parallel processing system for handling large-scale data analysis tasks.
+# Developing a parallel computing system for analyzing large-scale genomic datasets.
 ```
 7. Numpy:
 ```python
@@ -121,7 +120,8 @@ print(sequence_array)
 
 Advanced Application:
 
-Using NumPy for numerical operations in machine learning algorithms, such as matrix multiplication.
+
+# Using NumPy for genomic data analysis, such as SNP detection from sequencing data.
 ```
 8. Pandas:
 ```python
@@ -140,7 +140,7 @@ df = pd.DataFrame(data)
 print(df)
 Advanced Application:
 
-Analyzing and visualizing large datasets from a CSV file using Pandas.
+Analyzing and visualizing gene expression data from RNA-seq experiments using Pandas.
 ```
 9. Strings:
 ```python
@@ -154,7 +154,7 @@ print(sequence.split("AT"))
 
 Advanced Application:
 
-Developing a text-based natural language processing application.
+#Developing a program to predict RNA secondary structure from nucleotide sequence.
 ```
 10. Tuples:
 ```python
@@ -168,7 +168,7 @@ print(coordinate[0], coordinate[1])
 
 Advanced Application:
 
-Representing and manipulating coordinates in a geographical information system (GIS).
+# Representing and manipulating genomic coordinates in a genome annotation database.
 ```
 11. Decision Making:
 ```python
@@ -182,7 +182,7 @@ else:
 
 Advanced Application:
 
-Implementing a decision-making algorithm in a recommendation system.
+# Implementing a decision-making algorithm in a variant calling pipeline.
 ```
 12. Environment Setup:
 ```
@@ -196,8 +196,8 @@ source myenv/bin/activate  # On Linux/Mac
 
 Advanced Application:
 
-Automating environment setup using tools like Docker for deploying applications.
-
+#Automating environment setup using tools like Docker for deploying applications.
+# Automating environment setup using tools like ***Snakemake*** for reproducible bioinformatics pipelines.
 ```
 13. Files I/O:
 ```python
@@ -222,7 +222,8 @@ print(genes[1])
 
 Advanced Application:
 
-Implementing a queue data structure using a list for efficient data processing.
+#Implementing a queue data structure using a list for efficient data processing.
+# Implementing a stack data structure to process genomic data during sequence assembly.
 ```
 15. Modules:
 ```python
@@ -241,7 +242,7 @@ def add_numbers(a, b):
 
 Advanced Application:
 
-Developing a modular architecture for a complex software system.
+# Developing a modular bioinformatics toolkit for various sequence analysis tasks.
 ```
 16. Numbers:
 ```python
@@ -250,10 +251,6 @@ Example:
 x = 5
 y = 2.5
 print(x + y)
-
-Advanced Application:
-
-Implementing numerical simulations or scientific computing using advanced mathematical operations.
 ```
 17. Operators:
 ```python
@@ -262,20 +259,12 @@ Example:
 x = 10
 y = 3
 print(x // y)  # Integer division
-
-Advanced Application:
-
-Overloading operators for custom classes to define specific behavior.
 ```
 18. Python Basic Syntax:
 ```python
 Example:
 
 print("Hello, Bioinformatics World!")
-
-Advanced Application:
-
-Building a code formatter or linter to enforce coding standards.
 ```
 
 19. Variable Types:
@@ -285,10 +274,6 @@ Example:
 gene_name = "TP53"
 gene_length = 1000
 is_coding_gene = True
-
-Advanced Application:
-
-Implementing dynamic typing in a scripting language interpreter or developing a type-checking tool.
 ```
 
 **#Knowlegde is FREE but Solution is Your's🤘🏻**
