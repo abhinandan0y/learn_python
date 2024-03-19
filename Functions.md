@@ -1,64 +1,68 @@
-#Functions:<br /> 
+# bioinformatics_functions:
 
-Example 1:
-
+```Example 1:```
 ```python
-def greet(name):
-    return f"Hello, {name}!"
+def transcribe_dna_to_rna(dna_sequence):
+    return dna_sequence.replace('T', 'U')
 
-print(greet("Alice"))
+dna_sequence = "ATCGATCGATCG"
+rna_sequence = transcribe_dna_to_rna(dna_sequence)
+print("RNA Sequence:", rna_sequence)
 ```
-Example 2:
-
+```Example 2:```
 ```python
-def add_numbers(a, b):
-    return a + b
+def calculate_gc_content(dna_sequence):
+    gc_count = dna_sequence.count('G') + dna_sequence.count('C')
+    total_bases = len(dna_sequence)
+    gc_content = (gc_count / total_bases) * 100
+    return gc_content
 
-result = add_numbers(3, 5)
-print("Sum:", result)
+dna_sequence = "ATCGATCGATCG"
+gc_content = calculate_gc_content(dna_sequence)
+print("GC Content:", gc_content)
 ```
-Example 3:
-
+```Example 3:```
 ```python
-def square(number):
-    return number ** 2
+def reverse_complement(dna_sequence):
+    complement = {'A': 'T', 'T': 'A', 'C': 'G', 'G': 'C'}
+    reverse_complement_sequence = ''.join(complement[base] for base in reversed(dna_sequence))
+    return reverse_complement_sequence
 
-print("Square of 4:", square(4))
+dna_sequence = "ATCGATCGATCG"
+reverse_complement_sequence = reverse_complement(dna_sequence)
+print("Reverse Complement Sequence:", reverse_complement_sequence)
 ```
-Example 4:
-
+```Example 4:```
 ```python
-def find_max(nums):
-    return max(nums)
+def count_amino_acids(protein_sequence):
+    amino_acids = {'A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'Y'}
+    amino_acid_count = {aa: protein_sequence.count(aa) for aa in amino_acids}
+    return amino_acid_count
 
-numbers = [2, 8, 1, 6, 4]
-print("Maximum:", find_max(numbers))
+protein_sequence = "MFTPPSPPL"
+amino_acid_counts = count_amino_acids(protein_sequence)
+print("Amino Acid Counts:", amino_acid_counts)
 ```
-Example 5:
-
+```Example 5:```
 ```python
-def is_even(num):
-    return num % 2 == 0
+def is_palindrome(sequence):
+    return sequence == sequence[::-1]
 
-print("Is 7 even?", is_even(7))
+dna_sequence = "ATCGATCGATCG"
+print("Is DNA sequence a palindrome?", is_palindrome(dna_sequence))
 ```
 Advanced Application:
+
+Creating a function for large-scale sequence alignment:
 ```python
-#Creating a machine learning model evaluation function that takes predicted and actual values to calculate performance metrics.
-Creating a Function for Large Dataset Analysis:
+def align_sequences(sequence1, sequence2):
+    # Implement sequence alignment algorithm
+    alignment_score = 0
+    # Assume alignment score calculation here
+    return alignment_score
 
-def process_large_dataset(data):
-    # Perform complex analysis on the dataset
-    result = sum(data)
-    return result
-
-# Usage
-large_data = [i for i in range(1, 1000001)]
-result = process_large_dataset(large_data)
-print("Result:", result)
-Result:
-
-makefile
-Copy code
-Result: 500000500000
+sequence1 = "ATCGATCGATCG"
+sequence2 = "AGCTAGCTAGCT"
+alignment_score = align_sequences(sequence1, sequence2)
+print("Alignment Score:", alignment_score)
 ```
