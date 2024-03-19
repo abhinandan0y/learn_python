@@ -4,13 +4,12 @@
 ```python
 Example:
 
-class Car:
-    def __init__(self, brand, model):
-        self.brand = brand
-        self.model = model
+class DNASequence:
+    def __init__(self, sequence):
+        self.sequence = sequence
 
-my_car = Car(brand="Toyota", model="Camry")
-print(my_car.brand, my_car.model)
+my_sequence = DNASequence(sequence="ATCG")
+print(my_sequence.sequence)
 
 Advanced Application:
 
@@ -20,8 +19,9 @@ Creating a simulation of a car rental system where each car is an object with pr
 ```python
 Example:
 
-student = {"name": "John", "age": 20, "grade": "A"}
-print(student["name"], student["age"])
+
+sequence_info = {"gene_name": "TP53", "length": 1000, "type": "coding"}
+print(sequence_info["gene_name"], sequence_info["length"])
 
 Advanced Application:
 
@@ -90,6 +90,11 @@ import numpy as np
 array = np.array([1, 2, 3, 4])
 print(array)
 
+import numpy as np
+
+sequence_array = np.array(["ATCG", "GCTA", "TTAG"])
+print(sequence_array)
+
 Advanced Application:
 
 Using NumPy for numerical operations in machine learning algorithms, such as matrix multiplication.
@@ -104,6 +109,11 @@ data = {'Name': ['John', 'Alice', 'Bob'], 'Age': [25, 30, 22]}
 df = pd.DataFrame(data)
 print(df)
 
+import pandas as pd
+
+data = {'Gene': ['TP53', 'BRCA1', 'EGFR'], 'Expression': [10, 5, 8]}
+df = pd.DataFrame(data)
+print(df)
 Advanced Application:
 
 Analyzing and visualizing large datasets from a CSV file using Pandas.
@@ -115,6 +125,9 @@ Example:
 message = "Hello, World!"
 print(message.split(","))
 
+sequence = "ATCGATCG"
+print(sequence.split("AT"))
+
 Advanced Application:
 
 Developing a text-based natural language processing application.
@@ -125,6 +138,9 @@ Example:
 
 coordinates = (3, 4)
 print(coordinates[0], coordinates[1])
+
+coordinate = (3, 4)
+print(coordinate[0], coordinate[1])
 
 Advanced Application:
 
@@ -166,6 +182,9 @@ Example:
 with open("example.txt", "w") as file:
     file.write("Hello, File I/O!")
 
+with open("genomic_data.txt", "r") as file:
+    data = file.read()
+
 Advanced Application:
 
 Creating a program to read and process data from a variety of file formats.
@@ -174,8 +193,8 @@ Creating a program to read and process data from a variety of file formats.
 ```python
 Example:
 
-fruits = ["apple", "banana", "orange"]
-print(fruits[1])
+genes = ["TP53", "BRCA1", "EGFR"]
+print(genes[1])
 
 Advanced Application:
 
@@ -191,6 +210,10 @@ python
 # my_module.py
 def add_numbers(a, b):
     return a + b
+
+# # bioinformatics_tools.py
+# def align_sequences(sequence1, sequence2):
+#     pass
 
 Advanced Application:
 
@@ -224,7 +247,7 @@ Overloading operators for custom classes to define specific behavior.
 ```python
 Example:
 
-print("Hello, World!")
+print("Hello, Bioinformatics World!")
 
 Advanced Application:
 
@@ -235,9 +258,9 @@ Building a code formatter or linter to enforce coding standards.
 ```python
 Example:
 
-name = "John"
-age = 25
-is_student = True
+gene_name = "TP53"
+gene_length = 1000
+is_coding_gene = True
 
 Advanced Application:
 
