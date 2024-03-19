@@ -1,4 +1,4 @@
-# bioinformatics_dictionary:
+# dictionary:
 
 ```Example 1:```
 ```python
