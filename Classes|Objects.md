@@ -1,94 +1,49 @@
-#Classes | Objects:<br /> 
+# bioinformatics_classes_objects:
 
-Example 1:
+class DNASequence:
+    def __init__(self, sequence_id, sequence):
+        self.sequence_id = sequence_id
+        self.sequence = sequence
 
-```python
-class Dog:
-    def __init__(self, name, age):
+sequence1 = DNASequence("Seq1", "ATCGATCG")
+print(sequence1.sequence_id, sequence1.sequence)
+
+class Protein:
+    def __init__(self, name, sequence):
         self.name = name
-        self.age = age
+        self.sequence = sequence
 
-dog1 = Dog("Buddy", 3)
-print(dog1.name, dog1.age)
-```
-Example 2:
-```python
+protein1 = Protein("Hemoglobin", "MFTPPSPPL")
+print(protein1.name, protein1.sequence)
 
-class Circle:
-    def __init__(self, radius):
-        self.radius = radius
+class Gene:
+    def __init__(self, symbol, sequence):
+        self.symbol = symbol
+        self.sequence = sequence
 
-    def area(self):
-        return 3.14 * self.radius ** 2
+gene1 = Gene("BRCA1", "ATCGTATG")
+print(gene1.symbol, gene1.sequence)
 
-circle1 = Circle(5)
-print("Area of Circle:", circle1.area())
-```
-Example 3:
-```python
+# Advanced Application:
 
-class Student:
-    def __init__(self, name, grade):
-        self.name = name
-        self.grade = grade
+# Creating a simulation of a genetic engineering lab where each DNA sequence, protein, or gene is represented as an object with properties and methods.
 
-student1 = Student("Alice", "A")
-print(f"{student1.name} scored {student1.grade} grade.")
-```
-Example 4:
-```python
+# bioinformatics_advanced_application:
 
-class Book:
-    def __init__(self, title, author):
-        self.title = title
-        self.author = author
+class SequenceAnalysis:
+    def __init__(self, sequence):
+        self.sequence = sequence
 
-book1 = Book("Python Crash Course", "Eric Matthes")
-print(f"{book1.title} by {book1.author}")
-```
-Example 5:
-```python
+    def calculate_gc_content(self):
+        gc_count = self.sequence.count('G') + self.sequence.count('C')
+        total_bases = len(self.sequence)
+        gc_content = (gc_count / total_bases) * 100
+        return gc_content
 
-class Car:
-    def __init__(self, brand, model):
-        self.brand = brand
-        self.model = model
+dna_sequence = SequenceAnalysis("ATCGATCGATCG")
+print("GC Content:", dna_sequence.calculate_gc_content())
 
-car1 = Car("Toyota", "Camry")
-print(f"Car: {car1.brand} {car1.model}")
-```
-#### Advanced Application:
+# Advanced Application:
 
-```python
-#Creating a Simulation of a Car Rental System:
-class Car:
-    def __init__(self, brand, model):
-        self.brand = brand
-        self.model = model
-        self.available = True
+# Developing a bioinformatics toolkit for sequence analysis with methods to calculate GC content, perform sequence alignment, and predict protein structure.
 
-    def rent(self):
-        if self.available:
-            print(f"Renting {self.brand} {self.model}")
-            self.available = False
-        else:
-            print("Car not available for rent")
-
-    def return_car(self):
-        print(f"Returning {self.brand} {self.model}")
-        self.available = True
-
-# Usage
-car1 = Car("Toyota", "Camry")
-car2 = Car("Honda", "Accord")
-
-car1.rent()
-car2.rent()
-
-car1.return_car()
-Result:
-
-Renting Toyota Camry
-Renting Honda Accord
-Returning Toyota Camry
-```
