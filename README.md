@@ -276,9 +276,11 @@ Advanced Application:
 
 # Developing a parallel computing system for analyzing large-scale genomic datasets.
 ```
+
+
 **#Knowlegde is FREE but Solution is Your's🤘🏻**
 
-**Keep on Learning and Executing...🏃🏻** contact@:bioinformaticsfuture@gmail.com
+**Keep on Learning and Executing...🏃🏻** connect@: www.BioInformaticsFuture.com
 <div style="width: 100%;">
-  <img src="https://www.bioinformaticsfuture.com/images/bioinformatics_lab.png" style="width: 100%;" alt="bioinformatics_lab.png">
+  <img src="https://github.com/abhinandan0y/BioInformaticsFuture.com/blob/main/images/bioinformatics_lab.png" style="width: 100%;" alt="bioinformatics_lab.png">
 </div>
